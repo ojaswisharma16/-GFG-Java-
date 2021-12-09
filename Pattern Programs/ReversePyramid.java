@@ -1,9 +1,9 @@
-// Pattern Program 03 - Java Program to Print Pyramid Pattern.
+// Pattern Program 04 - Java Program to Print Reverse Pyramid Pattern.
 import java.util.*;
-public class PyramidPattern{
+public class ReversePyramid{
     static void PrintPattern(int n){
         // i handle Rows
-      for(int i=1; i<=n; i++) {
+      for(int i=n; i>=1; i--) {
          
           int x=i-1;
           // j handle white spaces
@@ -17,7 +17,6 @@ public class PyramidPattern{
           for(int j=0; j<=x; j++){
              System.out.print((i+j) +" ");
          }
-         // Starts Printing after 3 of Second Row
          for(int j=1; j<=x; j++){
              System.out.print((i+x-j) +" ");
          }
